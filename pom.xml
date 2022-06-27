@@ -1,0 +1,70 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<modelVersion>4.0.0</modelVersion>
+<groupId>BA</groupId>
+<artifactId>BA</artifactId>
+<version>0.0.1-SNAPSHOT</version>
+<name>Bachelor Frechet and Isomap</name>
+<build>
+	<sourceDirectory>src</sourceDirectory>
+	<plugins>
+		<plugin>
+			<artifactId>maven-compiler-plugin</artifactId>
+			<version>3.8.0</version>
+			<configuration>
+				<release>13</release>
+			</configuration>
+		</plugin>
+	</plugins>
+</build>
+<dependencies>
+	<dependency>
+		<groupId>com.github.haifengl</groupId>
+		<artifactId>smile-core</artifactId>
+		<version>2.5.0</version>
+	</dependency>
+	<dependency>
+		<groupId>org.slf4j</groupId>
+		<artifactId>slf4j-nop</artifactId>
+		<version>1.7.30</version>
+	</dependency>
+	<dependency>
+		<groupId>com.opencsv</groupId>
+		<artifactId>opencsv</artifactId>
+		<version>4.6</version>
+	</dependency>
+	<dependency>
+		<groupId>edu.ucar</groupId>
+		<artifactId>cdm-core</artifactId>
+		<version>5.3.3</version>
+		<scope>compile</scope>
+	</dependency>
+	<dependency>
+		<groupId>org.jzy3d</groupId>
+		<artifactId>jzy3d-api</artifactId>
+		<version>1.0.0</version>
+		<exclusions>
+			<exclusion>
+				<groupId>org.slf4j</groupId>
+				<artifactId>slf4j-nop</artifactId>
+			</exclusion>
+		</exclusions> 
+	</dependency>
+	<dependency>
+		<groupId>com.fasterxml.jackson.core</groupId>
+		<artifactId>jackson-databind</artifactId>
+		<version>2.10.0</version>
+	</dependency>
+</dependencies> 
+<repositories>
+	<repository>
+		<id>unidata-all</id>
+		<name>Unidata All</name>
+		<url>https://artifacts.unidata.ucar.edu/repository/unidata-all/</url>
+	</repository>
+	<repository>
+		<id>jzy3d-releases</id>
+		<name>Jzy3d Releases</name>
+		<url>http://maven.jzy3d.org/releases</url>
+	</repository> 
+</repositories>
+</project>
