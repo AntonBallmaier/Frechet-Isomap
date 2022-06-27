@@ -1,1 +1,3 @@
 target
+data/weather/stations/*.svg
+data/weather/stations/*.zip
